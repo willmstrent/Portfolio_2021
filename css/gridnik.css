@@ -1,0 +1,176 @@
+
+/* Global Settings
+___________________________________*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.pagecolor {
+     background-color: #f5f0f5;
+     background-color: rgb(245,240,245);
+         background:#f5f0f5;
+         bgcolor:#f5f0f5;
+         #safari { background-color:#f5f0f5 }
+   }
+
+   body {
+     font-size: 1rem;
+     font-weight: 400;
+     font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
+     color: #222;
+    }
+
+
+/* Page layout
+___________________________________*/
+
+.vessel {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+
+
+.topnav {
+  padding: 3rem 0 3rem 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns:  6fr 2fr 2fr 2fr;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+.headline {
+  display: grid;
+  grid-template-columns:  8fr 4fr;
+  column-gap: 2rem;
+  height: 80vh;
+  align-items: center;
+}
+}
+
+@media (min-width: 1000px) {
+.teasers {
+  display: grid;
+  grid-template-columns:  4fr 4fr;
+  column-gap: 2rem;
+}
+}
+
+
+.footmatter {
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-rows:  1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+@media (min-width: 1000px) {
+.footmatter {
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns:  2fr 8fr 2fr;
+  column-gap: 2rem;
+}
+}
+
+  .card {
+   padding: 1rem ;
+   border: 0px	;
+   border-style: solid;
+   background-color: #fff;
+   border-radius: .5rem;
+   margin: 0 0 2rem 0;
+ }
+
+ @media (min-width: 1000px) {
+ .card {
+   padding: 2rem ;
+ }
+}
+
+ .card:hover {
+   box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.2);
+   border: 1px	;
+   border-style: solid;
+   border-color: rgba(0, 0, 0, 0.2);
+ }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, .small {
+  margin-top: 0;
+  margin-bottom: 2rem;}
+h1 { font-size: 2.25rem; line-height: 3rem;  letter-spacing: -.05rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
+h2 { font-size: 1.75rem; line-height: 2.625rem; letter-spacing: -.1rem; font-weight: 500;}
+  .small { font-size: .75rem; line-height: 1rem; font-weight: 500;}
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1, h2, .small {
+    margin-top: 0;
+    margin-bottom: 2rem;
+   }
+  h1 { font-size: 4rem;  line-height: 5rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
+  h2 { font-size: 2.25rem; line-height: 3rem;  letter-spacing: -.05rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
+  .small { font-size: .75rem; line-height: 1rem; font-weight: 500;}
+
+  .textbreak {
+    max-width: 80%;
+  }
+}
+
+
+.aside {
+  text-indent: -.4125em;
+  margin-left: 10%;
+  margin-top: 2%;
+  display: inline-block;
+  color:#A0A0A0;
+  font-weight: 700;
+}
+
+.tight { letter-spacing: 0rem; }
+.tightheavy {letter-spacing: 0rem;font-weight: 600;}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a {
+    color: #000;
+    text-decoration: none;
+   }
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a.shadow {
+     box-shadow:  inset 0 -4px 0 #F64FDA;
+  }
+
+  a.nodecor:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+
+
+  /* Utilities
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .u-full-width {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; }
