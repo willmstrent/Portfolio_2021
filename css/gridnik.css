@@ -7,19 +7,19 @@ ___________________________________*/
     margin: 0px;
 }
 
-.pagecolor {
+/* .pagecolor {
      background-color: #f5f0f5;
      background-color: rgb(245,240,245);
          background:#f5f0f5;
          bgcolor:#f5f0f5;
          #safari { background-color:#f5f0f5 }
-   }
+   } */
 
    body {
      font-size: 1rem;
      font-weight: 400;
      font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
-     color: #222;
+     color: rgba(0, 0, 0, 0.8);
     }
 
 
@@ -56,15 +56,18 @@ ___________________________________*/
 
 @media (min-width: 1000px) {
 .teasers {
+  margin-bottom: 8rem;
   display: grid;
   grid-template-columns:  4fr 4fr;
-  column-gap: 2rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
 }
 }
 
 
 .footmatter {
   margin-bottom: 6rem;
+  margin-top: 6rem;
   display: grid;
   grid-template-rows:  1fr 1fr 1fr;
   column-gap: 2rem;
@@ -72,9 +75,10 @@ ___________________________________*/
 
 @media (min-width: 1000px) {
 .footmatter {
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
   display: grid;
   grid-template-columns:  2fr 8fr 2fr;
+  grid-template-rows: 1fr;
   column-gap: 2rem;
 }
 }
@@ -84,13 +88,14 @@ ___________________________________*/
    border: 0px	;
    border-style: solid;
    background-color: #fff;
-   border-radius: .5rem;
+   border-radius: 1rem;
    margin: 0 0 2rem 0;
  }
 
  @media (min-width: 1000px) {
  .card {
    padding: 2rem ;
+   margin: 0;
  }
 }
 
@@ -157,9 +162,9 @@ p {
     text-decoration: underline;
   }
 
-  a.shadow {
+  /* a.shadow {
      box-shadow:  inset 0 -4px 0 #F64FDA;
-  }
+  } */
 
   a.nodecor:hover {
     color: #000;
@@ -172,5 +177,10 @@ p {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .u-full-width {
     width: 100%;
+    height: auto;
+    box-sizing: border-box; }
+
+  .u-half-width {
+    width: 50%;
     height: auto;
     box-sizing: border-box; }
