@@ -8,7 +8,7 @@ ___________________________________*/
 }
 
 
-/* * {
+ /* * {
     outline: 1px solid red;
 } */
 
@@ -68,18 +68,6 @@ ___________________________________*/
   align-items: center;
 }
 }
-
-@media (min-width: 1000px) {
-.row_space {
-  margin-bottom: 12rem;
-}
-}
-.row_space {
-  margin-bottom: 6rem;
-}
-
-
-
 
 
 @media (min-width: 1000px) {
@@ -364,7 +352,7 @@ ul {
 
 
 
-  /* Utilities
+  /* Utilities - Spacing
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .u-full-width {
     width: 100%;
@@ -400,8 +388,6 @@ ul {
   }
 
 
-
-
   .bottom_1rem {
     margin-bottom: 1rem;
   }
@@ -412,4 +398,15 @@ ul {
 
   .bottom_3rem {
     margin-bottom: 3rem;
+  }
+
+
+  @media (min-width: 1000px) {
+  .row_space {
+    margin-bottom: 12rem;
+  }
+  }
+
+  .row_space {
+    margin-bottom: 6rem;
   }
