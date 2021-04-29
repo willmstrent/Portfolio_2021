@@ -299,11 +299,12 @@ ___________________________________*/
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  h1, h2, .small {
+  h1, h2, h3, .small {
   margin-top: 0;
   margin-bottom: 2rem;}
   h1 { font-size: 2.25rem; line-height: 3rem;  letter-spacing: -.05rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
   h2 { font-size: 1.75rem; line-height: 2.625rem; font-weight: 500;}
+  h3 { font-size: 1rem; line-height: 1.5rem;  letter-spacing: 0rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
   .small { font-size: .75rem; line-height: 1rem; font-weight: 500;}
   .eyebrow {
     font-size: .75rem; line-height: 1rem;  letter-spacing: .1rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);
@@ -312,12 +313,13 @@ ___________________________________*/
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1, h2, .small {
+  h1, h2, h3, .small {
     margin-top: 0;
     margin-bottom: 2rem;
    }
   h1 { font-size: 4rem;  line-height: 5rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
   h2 { font-size: 2.25rem; line-height: 3rem;  letter-spacing: -.025rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
+  h3 { font-size: 1.75rem; line-height: 2.625rem;  letter-spacing: -.025rem; font-weight: 700; color: rgba(0, 0, 0, 0.8);}
   .small { font-size: .75rem; line-height: 1rem; font-weight: 500;}
 
   .textbreak {
