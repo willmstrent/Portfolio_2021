@@ -22,13 +22,6 @@ ___________________________________*/
          #safari { background-color:#F1EEEA }
    }
 
-/* .pagecolor {
-     background-color: #f5f0f5;
-     background-color: rgb(245,240,245);
-         background:#f5f0f5;
-         bgcolor:#f5f0f5;
-         #safari { background-color:#f5f0f5 }
-   } */
 
    body {
      font-size: 1rem;
@@ -68,6 +61,7 @@ ___________________________________*/
   align-items: center;
 }
 }
+
 
 
 @media (min-width: 1000px) {
@@ -287,14 +281,68 @@ ___________________________________*/
    padding: 2rem ;
    margin: 0;
  }
+ }
+
+ .card_half_top {
+  padding: 1rem 1rem 0 ;
+  margin: 0;
+  border: 0px	;
+  border-style: solid;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  align-items: flex-end;
 }
 
+.card_color_a {
+  background-color: #3C506F;
+}
+
+.card_color_b {
+  background-color: #19442F;
+}
+
+
+.card_half_bottom {
+ padding: 1rem ;
+ margin: 0;
+ border: 0px	;
+ border-style: solid;
+ background-color: #fff;
+ border-radius:  0 0 1rem 1rem;
+}
+
+.card_grid {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns:  1fr;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+@media (min-width: 1000px) {
+.card_grid {
+  margin: 0;
+}
+}
+
+
  .card:hover {
-   box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.2);
+   box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.6);
    border: 1px	;
    border-style: solid;
-   border-color: rgba(0, 0, 0, 0.2);
+   border-color: rgba(0, 0, 0, 0.6);
  }
+
+ .card_grid:hover {
+   box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.6);
+   border: 1px	;
+   border-style: solid;
+   border-color: rgba(0, 0, 0, 0.6);
+   border-radius:  1rem;
+ }
+
+
 
 
 /* Typography
@@ -458,4 +506,30 @@ strong {
 
   .top_pad_2 {
     padding-top: 2rem;
+  }
+
+  /* make keyframes that tell the start state and the end state of our object */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+  }
+
+  .fade-in.one {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
   }
