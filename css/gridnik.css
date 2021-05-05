@@ -62,7 +62,15 @@ ___________________________________*/
 }
 }
 
-
+@media (min-width: 1000px) {
+.teasers_top {
+  margin-bottom: 8rem;
+  display: grid;
+  grid-template-columns:  4fr 4fr;
+  column-gap: 6rem;
+  row-gap: 12rem;
+}
+}
 
 @media (min-width: 1000px) {
 .teasers {
@@ -311,6 +319,14 @@ ___________________________________*/
  border-radius:  0 0 1rem 1rem;
 }
 
+@media (min-width: 1000px) {
+.card_half_bottom {
+  padding: 2rem ;
+  margin: 0;
+}
+}
+
+
 .card_grid {
   margin-bottom: 2rem;
   display: grid;
@@ -470,6 +486,13 @@ strong {
     height: auto;
     box-sizing: border-box;
   }
+
+  @media (min-width: 1000px) {
+  .space_above_homepg {
+    margin-top: 16rem;
+  }
+  }
+
 
 
   .space_above_12 {
