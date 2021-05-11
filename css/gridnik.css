@@ -461,6 +461,71 @@ strong {
 
 
 
+/* buttons
+_________________________________________________*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 2.25rem;
+  padding: 0 2rem 0 2rem;
+  color: rgba(0,0,0, .8);
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 1.125rem;
+  border: 1px solid rgba(0,0,0, .4);
+  cursor: pointer;
+  box-sizing: border-box;}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: rgba(0, 0, 0, .8);
+  border-color: rgba(0, 0, 0, .25);
+  background-color: rgba(0, 0, 0, .15);
+  text-decoration: none;
+  box-shadow: 1px 1px 0px .5px rgba(0, 0, 0, 0.6);}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color:rgba(0, 0, 0, 0.8);}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, .15); ;
+  border-color: rgba(0, 0, 0, 0.25);
+ box-shadow: 1px 1px 0px .5px rgba(0, 0, 0, 0.6);}
+
+
+
+
+
   /* Utilities - Spacing
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .u-full-width {
@@ -490,6 +555,12 @@ strong {
   @media (min-width: 1000px) {
   .space_above_homepg {
     margin-top: 16rem;
+  }
+  }
+
+  @media (min-width: 1000px) {
+  .space_above_about {
+    margin-top: 10rem;
   }
   }
 
@@ -556,3 +627,14 @@ strong {
     -moz-animation-delay: 0.1s;
     animation-delay: 0.1s;
   }
+
+  .face_image_wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+.face_image {
+    width: 100%;
+    position: relative;
+}
